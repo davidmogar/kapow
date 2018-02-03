@@ -1,1 +1,1 @@
-![kapow image](https://github.com/davidmogar/kapow/blob/master/kapow.png?raw=true)
+![kapow image](https://github.com/davidmogar/kapow/blob/resources/kapow.png?raw=true)
