@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-readonly MODULES_PATH='./modules/'
+readonly MODULES_PATH='./modules/*/'
 
 function configure_repositories {
     for directory in $MODULES_PATH
