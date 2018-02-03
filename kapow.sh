@@ -1,28 +1,33 @@
 #!/usr/bin/env bash
 
-readonly MODULES_PATH='./modules/*/'
+readonly FILE_INSTALL='install.sh'
+readonly FILE_REPOSITORY='repository.sh'
+readonly PATH_MODULES='modules/*/'
+readonly PATH_ROOT="$PWD"
 
 function configure_repositories {
-    for directory in $MODULES_PATH
+    for directory in $PATH_MODULES
     do
-        file="$directory/repository.sh"
-        if [ -f $file ]
+        cd $directory
+        if [ -f $FILE_REPOSITORY ]
         then
             echo "Configuring repositories for module '$(basename $directory)''"
-            source $file
+            source $FILE_INSTALL
         fi
+        cd $PATH_ROOT
     done
 }
 
 function install_modules {
-    for directory in $MODULES_PATH
+    for directory in $PATH_MODULES
     do
-        file="$directory/install.sh"
-        if [ -f $file ]
+        cd $directory
+        if [ -f $FILE_INSTALL ]
         then
             echo "Installing module '$(basename $directory)'"
-            source $file
+            source $FILE_INSTALL
         fi
+        cd $PATH_MODULES
     done
 }
 
