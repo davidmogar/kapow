@@ -8,3 +8,4 @@ chsh -s $(which fish)
 #
 curl -L https://get.oh-my.fish > install
 fish install -y --noninteractive
+rm -rf install
