@@ -7,5 +7,5 @@ chsh -s $(which fish)
 # https://github.com/oh-my-fish/oh-my-fish
 #
 curl -L https://get.oh-my.fish > install
-fish install -y --noninteractive
+sudo fish install -y --noninteractive
 rm -rf install
