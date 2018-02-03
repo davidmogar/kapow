@@ -8,7 +8,7 @@ function configure_repositories {
         file="$directory/repository.sh"
         if [ -f $file ]
         then
-            echo "Configuring repositories for module $directory"
+            echo "Configuring repositories for module '$(basename $directory)''"
             source $file
         fi
     done
@@ -20,7 +20,7 @@ function install_modules {
         file="$directory/install.sh"
         if [ -f $file ]
         then
-            echo "Installing module $directory"
+            echo "Installing module '$(basename $directory)'"
             source $file
         fi
     done
