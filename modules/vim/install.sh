@@ -6,6 +6,6 @@ sudo apt install -y vim
 cp .vimrc ~/
 
 # Copy custom indentations
-ftplugin_dir='~/.vim/after/ftplugin'
+ftplugin_dir="$HOME/.vim/after/ftplugin"
 mkdir -p $ftplugin_dir
 cp ./indent $ftplugin_dir
