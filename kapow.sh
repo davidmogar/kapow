@@ -27,7 +27,7 @@ function install_modules {
             echo "Installing module '$(basename $directory)'"
             source $FILE_INSTALL
         fi
-        cd $PATH_MODULES
+        cd $PATH_ROOT
     done
 }
 
