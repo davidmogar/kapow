@@ -30,6 +30,7 @@ function update_system {
     echo 'Updating the system'
     sudo apt -y update
     sudo apt -y upgrade
+    sudo apt-get -y autoremove
 }
 
 configure_repositories
