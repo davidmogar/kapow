@@ -6,7 +6,7 @@ function configure_repositories {
     for directory in $MODULES_PATH
     do
         file="$directory/repository.sh"
-        if [ ! -f $file]
+        if [ ! -f $file ]
         then
             source $file
         fi
@@ -16,7 +16,7 @@ function configure_repositories {
 function install_modules {
     for directory in $MODULES_PATH
     do
-        source $directory/install.sh
+        source "$directory/install.sh"
     done
 }
 
