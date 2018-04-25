@@ -1,1 +1,3 @@
-![kapow image](https://github.com/davidmogar/kapow/blob/resources/kapow.png?raw=true)
+<p align="center">
+  <img height="300" src="https://github.com/davidmogar/kapow/blob/resources/onepunch.jpg?raw=true">
+</p>
